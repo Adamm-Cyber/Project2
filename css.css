@@ -1,0 +1,84 @@
+css
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.todo-input {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80vw; /* تعديل العرض */
+    max-width: 1000px;
+    position: relative;
+    left: 50px;
+    padding: 200px;
+    top: 50px;
+    
+}
+
+.todo-input h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em; /* تكبير النص */
+    position: relative;
+    top: -150px;
+
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* أضف مسافة أسفل مستطيل البحث */
+    justify-content: center;
+    position: relative;
+    top: -160px;
+    
+    
+
+}
+
+.input-container input {
+    width: 600px; /* تعديل العرض */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.2em; /* تكبير النص */
+    width: 1500px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #00a8a8;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em; /* تكبير النص */
+    position: relative;
+    top: -150px;
+}
+
+button:hover {
+    background-color: #007f7f;
+}
+
+
+
+.container {
+    width: 100%; /* غطاء عرض الصفحة الكامل */
+    max-width: 1400px; /* الحجم الأقصى للمستطيل العلوي */
+    margin: 0 auto; /* توسيط المستطيل العلوي */
+    padding: 20px;
+    background-color: #ffefc1; /* لون الخلفية */
+    border-radius: 10px; /* زوايا مستديرة */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
