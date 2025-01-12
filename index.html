@@ -3,16 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TodoInput</title>
+    <title>Todo List App</title>
+    
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <div class="todo-input">
-        <h1>TodoInput</h1>
-        <div class="input-container">
+    <div class="container">
+        <h1>Todo Input</h1>
+        <div class="task-input">
             <input type="text" placeholder="New Todo">
+            <button>Add Task</button>
         </div>
-        <button>Add new task</button>
+        <div class="filter-buttons">
+            <button>All</button>
+            <button>Done</button>
+            <button>Todo</button>
+        </div>
+        <ul class="task-list">
+            <li class="task">
+                <input type="checkbox" onclick="toggleTask(this)"> 
+                <span>Learn ReactJS basics</span>
+                <div class="task-actions">
+                    <span class="edit-btn icon">✏️</span>
+                    <span class="delete-btn icon">🗑️</span>
+                </div>
+            </li>
+            <li class="task">
+                <input type="checkbox" onclick="toggleTask(this)"> 
+                <span>Practice ReactJS</span>
+                <div class="task-actions">
+                    <span class="edit-btn icon">✏️</span>
+                    <span class="delete-btn icon">🗑️</span>
+                </div>
+            </li>
+            <li class="task">
+                <input type="checkbox" onclick="toggleTask(this)"> 
+                <span>Learn Redux</span>
+                <div class="task-actions">
+                    <span class="edit-btn icon">✏️</span>
+                    <span class="delete-btn icon">🗑️</span>
+                </div>
+            </li>
+            <li class="task">
+                <input type="checkbox" onclick="toggleTask(this)"> 
+                <span>Code portfolio in React</span>
+                <div class="task-actions">
+                    <span class="edit-btn icon">✏️</span>
+                    <span class="delete-btn icon">🗑️</span>
+                </div>
+            </li>
+            <li class="task">
+                <input type="checkbox" onclick="toggleTask(this)"> 
+                <span>Learn React Native</span>
+                <div class="task-actions">
+                    <span class="edit-btn icon">✏️</span>
+                    <span class="delete-btn icon">🗑️</span>
+                </div>
+            </li>
+        </ul>
+        <button class="delete-all-btn">Delete done tasks</button>
+        <button class="delete-all-btn">Delete all tasks</button>
     </div>
+
+    <script>
+        function toggleTask(checkbox) {
+            const task = checkbox.closest('.task');
+            if (checkbox.checked) {
+                task.classList.add('completed');
+            } else {
+                task.classList.remove('completed');
+            }
+        }
+    </script>
 </body>
 </html>
